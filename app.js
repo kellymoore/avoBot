@@ -37,5 +37,5 @@ bot.dialog('/', function (session) {
 bot.dialog('/intro', require('./dialogs/introDialog')).triggerAction({matches: [/help/i, /hi/i, /hello/i, /hey/i]});
 
 bot.dialog('/ripe-response-dialog', require('./dialogs/ripePredictionDialog'));
-bot.dialog('/unripe-response-dialog', require('./dialogs/ripePredictionDialog'));
-bot.dialog('/unknown-response-dialog', require('./dialogs/ripePredictionDialog'));
+bot.dialog('/unripe-response-dialog', require('./dialogs/unripePredictionDialog'));
+bot.dialog('/unknown-response-dialog', require('./dialogs/unknownPredictionDialog'));
